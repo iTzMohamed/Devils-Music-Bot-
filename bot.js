@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+econst Discord = require('discord.js');
 
 const Util = require('discord.js');
 
@@ -315,17 +315,18 @@ function play(guild, song) {
 client.on('message', message => {
     if (message.content === 'help') {
         let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .setTitle('**@setTitle...**')
+        .setDescription('**@setDescription
+	(!)**')
+        .addField('play', '@p ')
+        .addField('join', '@join')
+        .addField('disconnect', '@leave')
+        .addField('skip', '@s')
+        .addField('pause', 'ا@pause)
+        .addField('resume', '@resume)
+        .addField('queue', '@queue')
+        .addField('np', '@show')
+        .setFooter('(general_commands) @general')
       message.channel.send(helpEmbed);
     }
 });
